@@ -5,6 +5,8 @@
 //
 //
 
+#import <UIKit/UIKit.h>
+
 //! Project version number for FlatUIColors.
 FOUNDATION_EXPORT double FlatUIColorsVersionNumber;
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		01F637E91D82874900CFB8EB /* FlatUIColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F637E71D82874900CFB8EB /* FlatUIColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		01F637F41D8288A800CFB8EB /* FlatUIColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F637E71D82874900CFB8EB /* FlatUIColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01F637F61D82894500CFB8EB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F637F51D82894500CFB8EB /* Colors.swift */; };
 		01F637F71D82894500CFB8EB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F637F51D82894500CFB8EB /* Colors.swift */; };
 /* End PBXBuildFile section */
@@ -87,7 +86,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F637F41D8288A800CFB8EB /* FlatUIColors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
