@@ -7,12 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010B4E9F1D88A55000B4B4CF /* FlatUIColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F637D71D82873200CFB8EB /* FlatUIColors.framework */; };
+		010B4EAE1D88A61C00B4B4CF /* FlatUIColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F637D71D82873200CFB8EB /* FlatUIColors.framework */; };
+		010B4EBD1D88A75B00B4B4CF /* FlatUIColors_iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B4EB61D88A74400B4B4CF /* FlatUIColors_iOS_Tests.swift */; };
+		010B4EBF1D88A76100B4B4CF /* FlatUIColors_macOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B4EB91D88A74400B4B4CF /* FlatUIColors_macOS_Tests.swift */; };
 		01F637E91D82874900CFB8EB /* FlatUIColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F637E71D82874900CFB8EB /* FlatUIColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01F637F61D82894500CFB8EB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F637F51D82894500CFB8EB /* Colors.swift */; };
 		01F637F71D82894500CFB8EB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F637F51D82894500CFB8EB /* Colors.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		010B4EA01D88A55000B4B4CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F637CC1D8286EC00CFB8EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01F637D61D82873200CFB8EB;
+			remoteInfo = "FlatUIColors macOS";
+		};
+		010B4EAF1D88A61C00B4B4CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F637CC1D8286EC00CFB8EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01F637D61D82873200CFB8EB;
+			remoteInfo = "FlatUIColors macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		010B4E9A1D88A55000B4B4CF /* FlatUIColors macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlatUIColors macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		010B4EA91D88A61C00B4B4CF /* FlatUIColors iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlatUIColors iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		010B4EB61D88A74400B4B4CF /* FlatUIColors_iOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatUIColors_iOS_Tests.swift; sourceTree = "<group>"; };
+		010B4EB71D88A74400B4B4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010B4EB91D88A74400B4B4CF /* FlatUIColors_macOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatUIColors_macOS_Tests.swift; sourceTree = "<group>"; };
+		010B4EBA1D88A74400B4B4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F637D71D82873200CFB8EB /* FlatUIColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatUIColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F637E51D82874900CFB8EB /* FlatUIColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatUIColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F637E71D82874900CFB8EB /* FlatUIColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatUIColors.h; sourceTree = "<group>"; };
@@ -24,6 +51,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		010B4E971D88A55000B4B4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010B4E9F1D88A55000B4B4CF /* FlatUIColors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010B4EA61D88A61C00B4B4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010B4EAE1D88A61C00B4B4CF /* FlatUIColors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01F637D31D82873200CFB8EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,11 +84,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010B4EB41D88A74400B4B4CF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				010B4EB51D88A74400B4B4CF /* iOS */,
+				010B4EB81D88A74400B4B4CF /* macOS */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		010B4EB51D88A74400B4B4CF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				010B4EB61D88A74400B4B4CF /* FlatUIColors_iOS_Tests.swift */,
+				010B4EB71D88A74400B4B4CF /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		010B4EB81D88A74400B4B4CF /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				010B4EB91D88A74400B4B4CF /* FlatUIColors_macOS_Tests.swift */,
+				010B4EBA1D88A74400B4B4CF /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 		01F637CB1D8286EC00CFB8EB = {
 			isa = PBXGroup;
 			children = (
 				01F637F81D8289AB00CFB8EB /* Metadata */,
 				01F637ED1D8287D300CFB8EB /* Sources */,
+				010B4EB41D88A74400B4B4CF /* Tests */,
 				01F637D81D82873200CFB8EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +126,8 @@
 			children = (
 				01F637D71D82873200CFB8EB /* FlatUIColors.framework */,
 				01F637E51D82874900CFB8EB /* FlatUIColors.framework */,
+				010B4E9A1D88A55000B4B4CF /* FlatUIColors macOS Tests.xctest */,
+				010B4EA91D88A61C00B4B4CF /* FlatUIColors iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +173,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		010B4E991D88A55000B4B4CF /* FlatUIColors macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010B4EA21D88A55000B4B4CF /* Build configuration list for PBXNativeTarget "FlatUIColors macOS Tests" */;
+			buildPhases = (
+				010B4E961D88A55000B4B4CF /* Sources */,
+				010B4E971D88A55000B4B4CF /* Frameworks */,
+				010B4E981D88A55000B4B4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				010B4EA11D88A55000B4B4CF /* PBXTargetDependency */,
+			);
+			name = "FlatUIColors macOS Tests";
+			productName = "FlatUIColors macOS Tests";
+			productReference = 010B4E9A1D88A55000B4B4CF /* FlatUIColors macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		010B4EA81D88A61C00B4B4CF /* FlatUIColors iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010B4EB11D88A61C00B4B4CF /* Build configuration list for PBXNativeTarget "FlatUIColors iOS Tests" */;
+			buildPhases = (
+				010B4EA51D88A61C00B4B4CF /* Sources */,
+				010B4EA61D88A61C00B4B4CF /* Frameworks */,
+				010B4EA71D88A61C00B4B4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				010B4EB01D88A61C00B4B4CF /* PBXTargetDependency */,
+			);
+			name = "FlatUIColors iOS Tests";
+			productName = "FlatUIColors iOS Tests";
+			productReference = 010B4EA91D88A61C00B4B4CF /* FlatUIColors iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		01F637D61D82873200CFB8EB /* FlatUIColors macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01F637DD1D82873300CFB8EB /* Build configuration list for PBXNativeTarget "FlatUIColors macOS" */;
@@ -142,8 +251,19 @@
 		01F637CC1D8286EC00CFB8EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
+					010B4E991D88A55000B4B4CF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B9YNE9L52C;
+						ProvisioningStyle = Automatic;
+					};
+					010B4EA81D88A61C00B4B4CF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B9YNE9L52C;
+						ProvisioningStyle = Automatic;
+					};
 					01F637D61D82873200CFB8EB = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = B9YNE9L52C;
@@ -171,12 +291,28 @@
 			projectRoot = "";
 			targets = (
 				01F637D61D82873200CFB8EB /* FlatUIColors macOS */,
+				010B4E991D88A55000B4B4CF /* FlatUIColors macOS Tests */,
 				01F637E41D82874900CFB8EB /* FlatUIColors iOS */,
+				010B4EA81D88A61C00B4B4CF /* FlatUIColors iOS Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		010B4E981D88A55000B4B4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010B4EA71D88A61C00B4B4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01F637D51D82873200CFB8EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +330,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		010B4E961D88A55000B4B4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010B4EBF1D88A76100B4B4CF /* FlatUIColors_macOS_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010B4EA51D88A61C00B4B4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010B4EBD1D88A75B00B4B4CF /* FlatUIColors_iOS_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01F637D21D82873200CFB8EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,7 +364,228 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		010B4EA11D88A55000B4B4CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01F637D61D82873200CFB8EB /* FlatUIColors macOS */;
+			targetProxy = 010B4EA01D88A55000B4B4CF /* PBXContainerItemProxy */;
+		};
+		010B4EB01D88A61C00B4B4CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01F637D61D82873200CFB8EB /* FlatUIColors macOS */;
+			targetProxy = 010B4EAF1D88A61C00B4B4CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		010B4EA31D88A55000B4B4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B9YNE9L52C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recurse.FlatUIColors-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		010B4EA41D88A55000B4B4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B9YNE9L52C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recurse.FlatUIColors-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		010B4EB21D88A61C00B4B4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B9YNE9L52C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recurse.FlatUIColors-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		010B4EB31D88A61C00B4B4CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B9YNE9L52C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recurse.FlatUIColors-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		01F637D01D8286EC00CFB8EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,6 +850,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		010B4EA21D88A55000B4B4CF /* Build configuration list for PBXNativeTarget "FlatUIColors macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010B4EA31D88A55000B4B4CF /* Debug */,
+				010B4EA41D88A55000B4B4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010B4EB11D88A61C00B4B4CF /* Build configuration list for PBXNativeTarget "FlatUIColors iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010B4EB21D88A61C00B4B4CF /* Debug */,
+				010B4EB31D88A61C00B4B4CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01F637CF1D8286EC00CFB8EB /* Build configuration list for PBXProject "FlatUIColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

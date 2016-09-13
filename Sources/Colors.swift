@@ -1,4 +1,5 @@
 #if os(iOS)
+    import UIKit
     public typealias FlatColor = UIColor
 #elseif os(OSX)
     import Cocoa
